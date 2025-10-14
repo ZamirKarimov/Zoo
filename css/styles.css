@@ -10,3 +10,36 @@ h1 {
 :root {
   --bs-primary: #344e41 !important;
 }
+
+.top {
+  background-image: url("/assets/images/javygo-OTYzpn6_edw-unsplash.jpg");
+  /* background-color: #cccccc; */
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 85% 15%;
+}
+
+.cards {
+  display: inline-flex;
+  /* padding: 2em; */
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.credits {
+  background-color: #588157;
+  color: white;
+  /* height: 2em; */
+  /* width: 15em; */
+  border-radius: 1em;
+  text-align: center;
+  grid-row-start: 2;
+  /* margin: 3em; */
+}
