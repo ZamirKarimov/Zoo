@@ -1,26 +1,46 @@
-body {
-    background-color: #dad7cd !important;
-}
-h1 {
-  font-family: "BBH Sans Hegarty", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 :root {
   --bs-primary: #344e41 !important;
 }
 
-.top {
-  background-image: url("./assets/images/javygo-OTYzpn6_edw-unsplash.jpg");
-  /* background-color: #cccccc; */
-  height: 40rem;
+body {
+  background-color: #dad7cd !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+h1 {
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 5rem !important;
+  transition: font-size 2s;
+}
+
+h1:hover {
+  font-size: 5.5rem !important;
+}
+
+h2 {
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 200;
+  font-style: light;
+  font-size: 3rem !important;
+}
+
+.top {
+  background-image: url("/assets/images/angel-luciano-zTGzwYKXC-A-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40rem;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 85% 15%;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
 }
 
 .cards {
@@ -31,15 +51,74 @@ h1 {
   margin: auto;
   flex-wrap: wrap;
   align-items: stretch;
+  background-color: #a3b18a;
+  padding: 5em;
 }
 
-.credits {
-  background-color: #588157;
+.credits, button{
+  backdrop-filter: blur(5px);
   color: white;
-  /* height: 2em; */
-  /* width: 15em; */
   border-radius: 1em;
-  text-align: center;
+  grid-row-start: 3;
+  margin: 1rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 1em !important;
+  padding: 0.5rem;
+}
+
+.title {
+  color: white;
   grid-row-start: 2;
-  /* margin: 3em; */
+  grid-column-start: 2;
+  backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 1em;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  height: 40rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.about_pic {
+  background-image: url("/assets/images/michael-payne-a9NQ6z1zqro-unsplash.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+}
+
+.about_side {
+  width: 50%;
+  text-align: center;
+  place-items: center;
+}
+/* 
+a:link {
+  color: #dad7cd;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: #a3b18a;
+}
+a:active {
+  color: #588157;
+} */
+
+button {
+  background-color: #344e41;
+}
+button:hover {
+  background-color: #588157;
 }
