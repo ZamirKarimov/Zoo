@@ -13,23 +13,22 @@ h1 {
   font-family: "BBH Sans Hegarty", sans-serif;
   font-weight: 400;
   font-style: bold;
-  font-size: 5rem !important;
-  transition: font-size 2s;
 }
 
-h1:hover {
-  font-size: 5.5rem !important;
-}
 
 h2 {
   font-family: "BBH Sans Hegarty", sans-serif;
   font-weight: 200;
   font-style: light;
-  font-size: 3rem !important;
+  /* font-size: 3rem !important; */
 }
-
+p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
 .top {
-  background-image: url("/assets/images/angel-luciano-zTGzwYKXC-A-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -45,14 +44,16 @@ h2 {
 
 .cards {
   display: inline-flex;
-  /* padding: 2em; */
   flex-direction: row;
   justify-content: space-evenly;
   margin: auto;
   flex-wrap: wrap;
   align-items: stretch;
   background-color: #a3b18a;
-  padding: 5em;
+  padding: 3rem;
+  row-gap: 10px;
+  column-gap: 10px;
+  width: 100%;
 }
 
 .credits, button{
@@ -64,7 +65,7 @@ h2 {
   font-size: 1rem;
   border: 1px solid white;
   border-radius: 1em !important;
-  padding: 0.5rem;
+  padding: 10px;
 }
 
 .title {
@@ -74,6 +75,7 @@ h2 {
   backdrop-filter: blur(5px);
   border: 1px solid white;
   border-radius: 1em;
+  padding: 30px;
 }
 
 .about {
@@ -100,25 +102,41 @@ h2 {
   text-align: center;
   place-items: center;
 }
-/* 
+
 a:link {
   color: #dad7cd;
 }
 
-a:visited {
+ a:visited a:not(nav){
   color: green;
 }
 
-a:hover {
+a:hover a:not(nav){
   color: #a3b18a;
 }
-a:active {
+a:active a:not(nav){
   color: #588157;
-} */
+}
 
 button {
   background-color: #344e41;
 }
 button:hover {
   background-color: #588157;
+}
+
+#home {
+  background-image: url("/assets/images/angel-luciano-zTGzwYKXC-A-unsplash.jpg");
+}
+
+#about {
+  background-image: url("/assets/images/matthew-cabret-ub1sSvJ_Tbs-unsplash.jpg");
+}
+
+#animals {
+  background-image: url("/assets/images/mediaecke-p1lk9YM8ZEA-unsplash.jpg");
+}
+
+#events {
+  background-image: url("/assets/images/seri-FZSRIRSnxZo-unsplash.jpg");
 }
