@@ -89,7 +89,7 @@ p {
 }
 
 .about_pic {
-  background-image: url("/assets/images/michael-payne-a9NQ6z1zqro-unsplash.jpg");
+  background-image: url("assets/images/michael-payne-a9NQ6z1zqro-unsplash.jpg");
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -126,17 +126,17 @@ button:hover {
 }
 
 #home {
-  background-image: url("/assets/images/angel-luciano-zTGzwYKXC-A-unsplash.jpg");
+  background-image: url("assets/images/angel-luciano-zTGzwYKXC-A-unsplash.jpg");
 }
 
 #about {
-  background-image: url("/assets/images/matthew-cabret-ub1sSvJ_Tbs-unsplash.jpg");
+  background-image: url("assets/images/matthew-cabret-ub1sSvJ_Tbs-unsplash.jpg");
 }
 
 #animals {
-  background-image: url("/assets/images/mediaecke-p1lk9YM8ZEA-unsplash.jpg");
+  background-image: url("assets/images/mediaecke-p1lk9YM8ZEA-unsplash.jpg");
 }
 
 #events {
-  background-image: url("/assets/images/seri-FZSRIRSnxZo-unsplash.jpg");
+  background-image: url("assets/images/seri-FZSRIRSnxZo-unsplash.jpg");
 }
