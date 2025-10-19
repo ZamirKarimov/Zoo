@@ -8,7 +8,10 @@ body {
   background-position: center;
   background-size: cover;
 }
+footer {
+  background-color: black;
 
+}
 h1 {
   font-family: "BBH Sans Hegarty", sans-serif;
   font-weight: 400;
@@ -20,7 +23,6 @@ h2 {
   font-family: "BBH Sans Hegarty", sans-serif;
   font-weight: 200;
   font-style: light;
-  /* font-size: 3rem !important; */
 }
 p {
   font-family: "Raleway", sans-serif;
@@ -40,7 +42,23 @@ p {
   justify-content: center;
   text-align: center;
   place-items: center;
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 1rem;
+}
+
+.credits, button{
+  backdrop-filter: blur(5px);
+  color: white;
+  border-radius: 1em;
+  margin: 1rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 1em !important;
+  padding: 10px;
+}
+
+.top .credits {
+  grid-row-start: 3;
+  grid-column-start: 2;
 }
 
 .cards {
@@ -49,25 +67,12 @@ p {
   justify-content: space-evenly;
   margin: auto;
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: stretch ;
   background-color: #a3b18a;
   padding: 3rem;
   row-gap: 10px;
   column-gap: 10px;
   width: 100%;
-}
-
-.credits, button{
-  backdrop-filter: blur(5px);
-  color: white;
-  border-radius: 1em;
-  grid-row-start: 3;
-  grid-column-start: 2;
-  margin: 1rem;
-  font-size: 1rem;
-  border: 1px solid white;
-  border-radius: 1em !important;
-  padding: 10px;
 }
 
 .title {
@@ -80,45 +85,31 @@ p {
   padding: 30px;
 }
 
-.about {
+.home_about {
   display: flex;
   width: 100%;
-  height: 40rem;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: stretch;
+  height: 30rem;
+  text-align: center;
 }
-
-.about_pic {
-  background-image: url("assets/images/michael-payne-a9NQ6z1zqro-unsplash.jpg");
-  height: 100%;
+.home_about_pic .credits {
+  align-self: flex-end;
+}
+.home_about_pic {
+  background-image: url("../assets/images/michael-payne-a9NQ6z1zqro-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
-.about_side {
+.home_about_side, .home_about_pic {
   width: 50%;
+  padding: 1rem;
   text-align: center;
   place-items: center;
 }
 
-a:link {
-  color: #dad7cd;
-}
-
- a:visited a:not(nav){
-  color: green;
-}
-
-a:hover a:not(nav){
-  color: #a3b18a;
-}
-a:active a:not(nav){
-  color: #588157;
-}
 
 button {
   background-color: #344e41;
@@ -139,6 +130,6 @@ button:hover {
   background-image: url("../assets/images/mediaecke-p1lk9YM8ZEA-unsplash.jpg");
 }
 
-#events {
+#visit {
   background-image: url("../assets/images/seri-FZSRIRSnxZo-unsplash.jpg");
 }
