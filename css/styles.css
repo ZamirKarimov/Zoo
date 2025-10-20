@@ -4,11 +4,15 @@
 
 body {
   background-color: #dad7cd !important;
+  background-image: url("../assets/images/simone-dinoia-KTSltbcHlfQ-unsplash.jpg");
+  background-attachment: fixed;
 }
+
 footer {
   background-color: black;
 
 }
+
 h1 {
   font-family: "BBH Sans Hegarty", sans-serif;
   font-weight: 400;
@@ -27,12 +31,14 @@ h5 {
   font-weight: 100;
   font-style: light;
 }
+
 p {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
 }
+
 .top {
   height: 40rem;
   display: grid;
@@ -44,7 +50,8 @@ p {
   place-items: center;
 }
 
-.credits, .btn{
+.credits,
+.btn {
   margin: 1rem;
   font-size: 1rem;
 }
@@ -59,50 +66,55 @@ p {
   grid-column-start: 2;
 }
 
-.frame{
+.frame {
   backdrop-filter: blur(3px);
   color: white !important;
   padding: 10px;
   border: 1px solid white !important;
   border-radius: 1em !important;
-  background-color: rgba(58, 90, 64,.5);
+  background-color: rgba(58, 90, 64, .5);
   background-blend-mode: multiply;
 }
 
 .cards {
   margin: auto;
-  background-image: url("../assets/images/balint-miko-0CpmoSWgDcg-unsplash.jpg");
   padding: 3rem;
   row-gap: 10px;
   column-gap: 10px;
   width: 100%;
 }
 
-
 .home_about {
   width: 100%;
-  /* height: 20rem; */
 }
+
 .home_about_pic .credits {
   align-self: flex-end;
 }
-.home_about_pic{
+
+.home_about_pic {
   background-image: url("../assets/images/michael-payne-a9NQ6z1zqro-unsplash.jpg");
 }
 
-.background_image{
+.background_image {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .home_visit {
-  background-image: url("../assets/images/simone-dinoia-KTSltbcHlfQ-unsplash.jpg");
+  padding: 10vh !important;
+  backdrop-filter: blur(2px);
 }
-.home_about_side, .home_about_pic {
+
+.home_about_side,
+.home_about_pic {
   width: 50%;
+  background-color: #dad7cd;
 }
-.home_about_side, .home_visit{
+
+.home_about_side,
+.home_visit {
   display: grid;
   place-items: center;
   padding: 1rem;
@@ -112,6 +124,7 @@ p {
   background-color: #344e41 !important;
   padding: 1em !important;
 }
+
 .btn:hover {
   background-color: #588157 !important;
 }
