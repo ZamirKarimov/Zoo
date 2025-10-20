@@ -4,9 +4,6 @@
 
 body {
   background-color: #dad7cd !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 footer {
   background-color: black;
@@ -24,6 +21,12 @@ h2 {
   font-weight: 200;
   font-style: light;
 }
+
+h5 {
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 100;
+  font-style: light;
+}
 p {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -31,29 +34,19 @@ p {
   font-style: normal;
 }
 .top {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 40rem;
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: 0.5fr 2fr 0.5fr;
   gap: 40px;
-  justify-content: center;
+  padding: 1rem;
   text-align: center;
   place-items: center;
-  padding: 1rem;
 }
 
-.credits, button{
-  backdrop-filter: blur(5px);
-  color: white;
-  border-radius: 1em;
+.credits, .btn{
   margin: 1rem;
   font-size: 1rem;
-  border: 1px solid white;
-  border-radius: 1em !important;
-  padding: 10px;
 }
 
 .top .credits {
@@ -61,61 +54,66 @@ p {
   grid-column-start: 2;
 }
 
+.title {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.frame{
+  backdrop-filter: blur(3px);
+  color: white !important;
+  padding: 10px;
+  border: 1px solid white !important;
+  border-radius: 1em !important;
+  background-color: rgba(58, 90, 64,.5);
+  background-blend-mode: multiply;
+}
+
 .cards {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   margin: auto;
-  flex-wrap: wrap;
-  align-items: stretch ;
-  background-color: #a3b18a;
+  background-image: url("../assets/images/balint-miko-0CpmoSWgDcg-unsplash.jpg");
   padding: 3rem;
   row-gap: 10px;
   column-gap: 10px;
   width: 100%;
 }
 
-.title {
-  color: white;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  backdrop-filter: blur(5px);
-  border: 1px solid white;
-  border-radius: 1em;
-  padding: 30px;
-}
 
 .home_about {
-  display: flex;
   width: 100%;
-  height: 30rem;
-  text-align: center;
+  /* height: 20rem; */
 }
 .home_about_pic .credits {
   align-self: flex-end;
 }
-.home_about_pic {
+.home_about_pic{
   background-image: url("../assets/images/michael-payne-a9NQ6z1zqro-unsplash.jpg");
+}
+
+.background_image{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
 }
 
+.home_visit {
+  background-image: url("../assets/images/simone-dinoia-KTSltbcHlfQ-unsplash.jpg");
+}
 .home_about_side, .home_about_pic {
   width: 50%;
-  padding: 1rem;
-  text-align: center;
+}
+.home_about_side, .home_visit{
+  display: grid;
   place-items: center;
+  padding: 1rem;
 }
 
-
-button {
-  background-color: #344e41;
+.btn {
+  background-color: #344e41 !important;
+  padding: 1em !important;
 }
-button:hover {
-  background-color: #588157;
+.btn:hover {
+  background-color: #588157 !important;
 }
 
 #home {
@@ -132,4 +130,33 @@ button:hover {
 
 #visit {
   background-image: url("../assets/images/seri-FZSRIRSnxZo-unsplash.jpg");
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.frame a:link {
+  color: white;
+}
+
+/* visited link */
+.frame a:visited {
+  color: #dad7cd;
+}
+
+/* mouse over link */
+.frame a:hover {
+  color: #588157;
+}
+
+/* selected link */
+.frame a:active {
+  color: #3a5a40;
 }
