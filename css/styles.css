@@ -4,6 +4,9 @@
 
 body {
   background-color: #dad7cd !important;
+}
+
+#home_background {
   background-image: url("../assets/images/simone-dinoia-KTSltbcHlfQ-unsplash.jpg");
   background-attachment: fixed;
 }
@@ -159,17 +162,32 @@ p {
   color: white;
 }
 
-/* visited link */
 .frame a:visited {
   color: #dad7cd;
 }
 
-/* mouse over link */
 .frame a:hover {
   color: #588157;
 }
 
-/* selected link */
 .frame a:active {
   color: #3a5a40;
+}
+
+.about_text {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.about_image{
+  grid-column-start: 2;
+}
+
+.about_paragraph {
+  grid-column-start: 1;
+}
+
+.table_image {
+  width: 15rem;
 }
