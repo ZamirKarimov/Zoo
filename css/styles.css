@@ -189,5 +189,11 @@ p {
 }
 
 .table_image {
-  width: 15rem;
+  width: 10rem;
+  border-radius: 1em !important;
+}
+
+.animals_table{
+  margin: 2em;
+  
 }
