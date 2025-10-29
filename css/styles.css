@@ -81,7 +81,7 @@ p {
 
 .cards {
   margin: auto;
-  padding: 3rem;
+  padding: 1rem 3rem;
   row-gap: 10px;
   column-gap: 10px;
   width: 100%;
@@ -114,13 +114,13 @@ p {
 .home_about_pic {
   width: 50%;
   background-color: #dad7cd;
+  padding: 1rem;
 }
 
 .home_about_side,
 .home_visit {
   display: grid;
   place-items: center;
-  padding: 1rem;
 }
 
 .btn {
@@ -132,9 +132,6 @@ p {
   background-color: #588157 !important;
 }
 
-#home {
-  background-image: url("../assets/images/angel-luciano-zTGzwYKXC-A-unsplash.jpg");
-}
 
 #about {
   background-image: url("../assets/images/matthew-cabret-ub1sSvJ_Tbs-unsplash.jpg");
@@ -156,6 +153,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
+  /* flex-basis: content */
 }
 
 .frame a:link {
@@ -180,7 +178,7 @@ p {
   grid-template-columns: 2fr 1fr;
 }
 
-.about_image{
+.about_image {
   grid-column-start: 2;
 }
 
@@ -193,7 +191,10 @@ p {
   border-radius: 1em !important;
 }
 
-.animals_table{
+.animals_table {
   margin: 2em;
-  
+}
+
+.home_title {
+  margin: 2em 10em;
 }
