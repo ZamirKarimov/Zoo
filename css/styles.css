@@ -170,7 +170,6 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  /* flex-basis: content */
 }
 
 .frame a:link {
@@ -219,4 +218,13 @@ nav {
 .visit_map {
   height: 50dvh;
   width: 50dvw;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 0.7fr 1.6fr 0.7fr;
+  gap: 40px;
+  padding: 1rem;
+  text-align: center;
+  place-items: center;
 }
