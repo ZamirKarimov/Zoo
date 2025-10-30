@@ -43,8 +43,24 @@ p {
   font-style: normal;
 }
 
+nav {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.navbar-brand {
+  font-size: 1.3rem;
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+}
+.navbar-brand img {
+  width: 2rem;
+}
 .top {
-  height: 40rem;
+  height: 30rem;
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: 0.5fr 2fr 0.5fr;
@@ -166,7 +182,7 @@ p {
 }
 
 .frame a:hover {
-  color: #588157;
+  color: orange;
 }
 
 .frame a:active {
