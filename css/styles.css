@@ -1,7 +1,9 @@
 :root {
   --bs-primary: #344e41 !important;
 }
-
+html {
+  font-size: 16px;
+}
 body {
   background-color: #dad7cd !important;
 }
@@ -67,7 +69,7 @@ nav {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: 0.5fr 2fr 0.5fr;
-  gap: 40px;
+  gap: 2rem;
   padding: 1rem;
   text-align: center;
   place-items: center;
@@ -106,9 +108,9 @@ nav {
 .frame {
   backdrop-filter: blur(3px);
   color: white !important;
-  padding: 10px;
-  border: 1px solid white !important;
-  border-radius: 1em !important;
+  padding: 0.8rem;
+  border: 0.1rem solid white !important;
+  border-radius: 1rem !important;
   background-color: rgba(58, 90, 64, .5);
   background-blend-mode: multiply;
 }
@@ -122,8 +124,8 @@ nav {
 .cards {
   margin: auto;
   padding: 1rem 3rem;
-  row-gap: 10px;
-  column-gap: 10px;
+  row-gap: 0.8rem;
+  column-gap: 0.8rem;
   width: 100%;
 }
 
@@ -160,7 +162,7 @@ nav {
 
 .btn {
   background-color: #344e41 !important;
-  padding: 1em !important;
+  padding: 1rem !important;
 }
 
 .btn:hover {
@@ -211,11 +213,11 @@ a:hover{
 }
 
 .animals_table {
-  margin: 2em;
+  margin: 2rem;
 }
 
 .home_title {
-  margin: 2em 10em;
+  margin: 2rem 10rem;
 }
 
 .visit_map {
